@@ -6,6 +6,8 @@
 
 BOARD_VENDOR := xiaomi
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Display density
 TARGET_SCREEN_DENSITY := 480
 
