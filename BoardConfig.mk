@@ -120,5 +120,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/tucana/BoardConfigVendor.mk
