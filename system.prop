@@ -4,6 +4,7 @@ persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
 
 # Camera
+camera.disable_zsl_mode=true
 persist.camera.sat.fallback.dist=40
 persist.camera.sat.fallback.dist.d=10
 persist.camera.sat.fallback.luxindex=330
