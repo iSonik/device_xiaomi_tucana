@@ -34,6 +34,10 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
