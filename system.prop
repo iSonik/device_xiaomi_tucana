@@ -70,6 +70,7 @@ persist.vendor.radio.report_codec=1
 persist.rcs.supported=0
 
 # Subsystem ramdump
+persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Vendor
