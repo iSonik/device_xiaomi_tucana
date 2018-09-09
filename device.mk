@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service.tucana
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
