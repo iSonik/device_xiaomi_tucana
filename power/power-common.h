@@ -49,6 +49,9 @@ extern "C" {
 #define HINT_HANDLED (0)
 #define HINT_NONE (-1)
 
+#define INPUT_EVENT_WAKUP_MODE_OFF 4
+#define INPUT_EVENT_WAKUP_MODE_ON 5
+
 #include <hardware/power.h>
 
 enum CPU_GOV_CHECK { CPU0 = 0, CPU1 = 1, CPU2 = 2, CPU3 = 3 };
@@ -56,6 +59,7 @@ enum CPU_GOV_CHECK { CPU0 = 0, CPU1 = 1, CPU2 = 2, CPU3 = 3 };
 void power_init(void);
 void power_hint(power_hint_t hint, void *data);
 void set_interactive(int on);
+void set_feature(feature_t feature, int state);
 
 #ifdef __cplusplus
 }

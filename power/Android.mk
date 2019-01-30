@@ -36,6 +36,8 @@ LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 LOCAL_HEADER_LIBRARIES += libutils_headers
 LOCAL_HEADER_LIBRARIES += libhardware_headers
 
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+
 LOCAL_CFLAGS += -Werror -Wall -Wno-unused-parameter
 LOCAL_CFLAGS += -DINTERACTION_BOOST
 
