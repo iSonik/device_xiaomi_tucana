@@ -37,6 +37,10 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
