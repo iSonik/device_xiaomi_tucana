@@ -89,6 +89,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.tucana
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
