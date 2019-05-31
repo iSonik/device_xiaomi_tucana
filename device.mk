@@ -69,6 +69,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc
 
+# IFAA manager
+PRODUCT_PACKAGES += \
+    IFAAService \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
