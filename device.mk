@@ -30,6 +30,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Haters gonna hate...
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
