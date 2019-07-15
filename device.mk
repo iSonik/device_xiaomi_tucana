@@ -76,6 +76,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
