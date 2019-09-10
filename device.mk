@@ -49,6 +49,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Device init scripts
+PRODUCT_PACKAGES += \
+   ueventd.qcom.rc
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
