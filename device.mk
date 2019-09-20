@@ -22,6 +22,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/tucana/tucana-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
