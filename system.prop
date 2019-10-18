@@ -49,6 +49,9 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 # Netflix
 ro.netflix.bsp_rev=Q6150-17263-1
 
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
 # RIL
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ril.subscription.types=RUIM
@@ -72,6 +75,3 @@ persist.rcs.supported=0
 # Subsystem ramdump
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
-
-# Vendor
-ro.vendor.qti.va_aosp.support=1
