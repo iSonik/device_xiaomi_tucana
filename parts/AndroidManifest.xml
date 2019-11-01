@@ -38,5 +38,10 @@
             </intent-filter>
         </receiver>
 
+        <service
+            android:name=".fod.FodService"
+            android:permission="FodService">
+        </service>
+
     </application>
 </manifest>
