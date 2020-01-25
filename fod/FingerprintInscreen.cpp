@@ -26,10 +26,6 @@
 #define PARAM_NIT_630_FOD 1
 #define PARAM_NIT_NONE 0
 
-#define DISPPARAM_PATH "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param"
-#define DISPPARAM_HBM_FOD_ON "0x20000"
-#define DISPPARAM_HBM_FOD_OFF "0xE0000"
-
 #define Touch_Fod_Enable 10
 
 #define FOD_SENSOR_X 445
@@ -62,6 +58,7 @@ static void set(const std::string& path, const T& value) {
 
 FingerprintInscreen::FingerprintInscreen() {
     TouchFeatureService = ITouchFeature::getService();
+    xiaomiDisplayFeatureService = IDisplayFeature::getService();
     xiaomiFingerprintService = IXiaomiFingerprint::getService();
 }
 
@@ -86,26 +83,29 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
+    xiaomiDisplayFeatureService->setFeature(0, 11, 1, 4);
+    xiaomiDisplayFeatureService->setFeature(0, 11, 1, 3);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
     TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
+    xiaomiDisplayFeatureService->setFeature(0, 11, 0, 3);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+    xiaomiDisplayFeatureService->setFeature(0, 17, 1, 255);
+    xiaomiDisplayFeatureService->setFeature(0, 11, 1, 4);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
     TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
+    xiaomiDisplayFeatureService->setFeature(0, 17, 0, 255);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
 }
