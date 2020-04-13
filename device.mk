@@ -13,6 +13,13 @@ $(call inherit-product-if-exists, vendor/xiaomi/tucana/tucana-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150
+
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+
 # NFC
 PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/sn100x
