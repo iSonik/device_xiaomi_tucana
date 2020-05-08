@@ -39,8 +39,5 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # NFC
 TARGET_USES_NQ_NFC := true
 
-# Partitions
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
-
 # Inherit from the proprietary version
 -include vendor/xiaomi/tucana/BoardConfigVendor.mk
