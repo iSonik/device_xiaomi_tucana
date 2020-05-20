@@ -30,6 +30,9 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_CONFIG := vendor/lineage_tucana_defconfig
 endif
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 
