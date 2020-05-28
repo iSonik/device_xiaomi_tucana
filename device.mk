@@ -55,6 +55,7 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
+   init.mi_thermald.rc \
    ueventd.qcom.rc
 
 # Display
