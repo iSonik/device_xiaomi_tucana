@@ -131,6 +131,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+# Sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
