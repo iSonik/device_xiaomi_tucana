@@ -43,14 +43,14 @@ void vendor_load_properties() {
     if (region == "CN")
     {
         property_override("ro.product.model", "MI CC9 Pro");
-        property_override("ro.build.description", "tucana-user 9 PKQ1.190302.001 9.11.28 release-keys");
-        property_override("ro.build.fingerprint", "Xiaomi/tucana/tucana:9/PKQ1.190302.001/9.11.28:user/release-keys");
+        property_override("ro.build.description", "tucana-user 10 QKQ1.190825.002 V11.1.1.0.QFDCNXM release-keys");
+        property_override("ro.build.fingerprint", "Xiaomi/tucana/tucana:10/QKQ1.190825.002/V11.1.1.0.QFDCNXM:user/release-keys");
     }
     else if (region == "GLOBAL")
     {
         property_override("ro.product.model", "Mi Note 10");
-        property_override("ro.build.description", "tucana-user 9 PKQ1.190302.001 V11.0.11.0.PFDEUXM release-keys");
-        property_override("ro.build.fingerprint", "Xiaomi/tucana_eea/tucana:9/PKQ1.190302.001/V11.0.11.0.PFDEUXM:user/release-keys");
+        property_override("ro.build.description", "tucana_eea-user 10 QKQ1.190825.002 V11.1.1.0.QFDEUXM release-keys");
+        property_override("ro.build.fingerprint", "Xiaomi/tucana_eea/tucana:10/QKQ1.190825.002/V11.1.1.0.QFDEUXM:user/release-keys");
     }
     else
     {
