@@ -174,6 +174,7 @@ vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libFaceGrade.so
+vendor/lib/libft2vendor.so
 vendor/lib/libHalSuperSensorServer.so
 vendor/lib/libHalSuperSensorServerCWrapper.so
 vendor/lib/libmegface.so
@@ -336,6 +337,7 @@ vendor/lib64/libcapiv2vop.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libFaceGrade.so
 vendor/lib64/libflaw.so
+vendor/lib64/libft2vendor.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libHalSuperSensorServerCWrapper.so
 vendor/lib64/libmegface.so
